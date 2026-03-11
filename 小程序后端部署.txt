@@ -1,0 +1,26 @@
+以智能扶贫为例部署后端
+1.到项目所在目录: cd /root/package/nyxc-backend
+2.备份上个版本的项目包 tar -czf backend.2025121303.tar.gz love-backend
+
+	这条 tar 命令的作用是将名为 Love-backend 的文件 / 目录打包并通过 gzip 压缩，生成一个名为 backend.20251210.tar.gz
+3.删除已有的项目包rm -rf love-backend  love-backend.zip
+4.上传新的压缩包到当前目录
+5.解压缩zip包:unzip  love-backend.zip
+5.停服：./stop_nyxc.sh 
+6.启动新服务 ： ./start_nyxc.sh
+
+
+查看日志
+1.cd  logs
+2.tail -f node-server.log 
+
+
+图片资源位于：E:\gxn_AD\app\src\main\res\mipmap-hdpi
+icon_home.png
+ icon_home_active.png
+icon_donate.png
+ icon_donate_active.png
+ icon_request.png
+ icon_request_active.png
+ icon_user.png
+ icon_user_active.png
